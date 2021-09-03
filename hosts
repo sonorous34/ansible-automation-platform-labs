@@ -1,0 +1,5 @@
+[webservers]
+webserver0 ansible_host=awx.k8s.paas
+
+[webservers:vars]
+GUID="{{ lookup('env', 'GUID') }}"
