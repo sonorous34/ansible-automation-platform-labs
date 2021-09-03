@@ -1,0 +1,19 @@
+---
+
+firewalld_active: false
+a_simple_webserver_firewalld_ports_state: enabled 
+a_simple_webserver_firewalld_service_state: started
+a_simple_webserver_ports:
+  - 80
+
+a_simple_webserver_packages:
+  - httpd
+  - python3-mod_wsgi
+
+a_simple_webserver_index_file: index.html.j2
+a_simple_webserver_service: httpd
+a_simple_webserver_state: started
+a_simple_webserver_enabled: true
+a_simple_webserver_home: /var/www/html/index.html
+apache_test_message: "This is a test message"
+...
